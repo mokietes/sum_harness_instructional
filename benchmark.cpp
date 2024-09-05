@@ -40,6 +40,7 @@ int main(int argc, char** argv)
       setup(n, &A[0]);
 
       // insert your timer code here
+      std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
       // invoke method to perform the sum
       t = sum(n, &A[0]);
